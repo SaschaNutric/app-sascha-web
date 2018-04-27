@@ -5,7 +5,7 @@
 .navbar {
     height: 80px;
     margin-bottom: 0px !important;
-    border-bottom: 2px solid #17AA8B;
+    border-bottom: 2px solid #7ab740;
 
 }
 
@@ -13,7 +13,7 @@
     background-color: #FFF !important;
     border-color: #FFF !important;
     border-radius: 0px !important;
-    border-bottom: 4px solid #17AA8B !important;
+    border-bottom: 4px solid #7ab740 !important;
 }
 
 
@@ -47,7 +47,7 @@
 }
 
 .navbar-default .navbar-nav .suscribirse a{
-    background-color: #17AA8B !important;
+    background-color: #7ab740 !important;
     padding: 5px 15px;
 	color: #fff;
 }
@@ -65,7 +65,7 @@
 }
 
 .navbar-brand img{
-    width: 80px
+    width: 120px
 }
 
 .carousel img{
@@ -87,12 +87,13 @@
 
 .que-es img{
     width: 100%;
-    max-width: 400px;
+    max-width: 450px;
   border:none;
 }
 
-.que-es div{
-    width: 50%;
+.que-es >div{
+    width: 40%;
+    margin-left: 5%;
     text-align: center;
     font-size: 18px;
 }
@@ -103,7 +104,7 @@
 }
 
 .que-es div p{
-    background: #17AA8B;
+    background: #3da3cb;
     color: white;
     border-radius: 15px;
     padding:20px;
@@ -121,7 +122,8 @@
     min-width: 300px;
     height: 340px;
      padding-top: 0px;
- background: #B0EDE0;
+ background: #fff;
+ border: 3px solid #7ab740;
      border-radius: 10px;
 }
 
@@ -140,7 +142,7 @@
 
 .calculadora form .btn-success{
     width: 200px !important;
- background: #17AA8B !important;
+ background: #7ab740 !important;
  border:0px;
  margin-bottom: 15px
 }
@@ -149,9 +151,7 @@
     color: #fff;
     margin-top: 0px !important;
     padding: 10px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-       background: #17AA8B;
+       background: #7ab740;
        text-align: center;
 }
 
@@ -183,7 +183,7 @@
     width: 100% !important;
     max-width: 300px;
 
-background-color: #17AA8B !important;
+background-color: #1c6b34 !important;
  border:0px;
  font-weight: bold;
 }
@@ -210,7 +210,7 @@ background-color: #17AA8B !important;
 .seccion2 h1{
     width: 100%;
     text-align: center;
-    color:  #17AA8B;
+    color:  #1c6b34;
     font-size: 50px
 }
 
@@ -220,11 +220,10 @@ background-color: #17AA8B !important;
 }
 
 .texto-nosotros{
+    background: #7ab740 !important;
     color: #fff;
-     background:  #17AA8B;
   max-width: 45%;
   padding: 15px;
-  border: 2px solid  #17AA8B;
   border-radius: 25px;
 }
 
@@ -242,8 +241,9 @@ background-color: #17AA8B !important;
 
 .servicios h1{
     width: 100%;
+    font-size: 60px;
     text-align: center;
-    color: #17AA8B;
+    color: #1c6b34;
 }
 
 .servicios .filtros{
@@ -348,6 +348,8 @@ background-color: #17AA8B !important;
 .todos-servicios{
     width: 70%;
     max-width: 700px !important;
+    height: 665px;
+    overflow: hidden;
     display: flex;
    flex-wrap: wrap;
     align-items: flex-start;
@@ -372,12 +374,12 @@ background-color: #17AA8B !important;
 
 
 .servicio{
-    width: 210px;
-    height: 500px;
-    background: rgb(5, 137, 89);
+    width: 300px;
+    height: 650px;
+    background: #1c6b34;
     color: white;
     margin-top: 10px;
-    border: 1px solid rgb(5, 137, 89);
+    border: 1px solid #1c6b34;
     overflow: hidden;
     -webkit-box-shadow: 3px 2px 5px 0px rgba(117,115,117,1);
 -moz-box-shadow: 3px 2px 5px 0px rgba(117,115,117,1);
@@ -399,20 +401,22 @@ box-shadow: 3px 2px 5px 0px rgba(117,115,117,1);
 }
 
 .servicio p{
-    text-align: justify;
-    width: 190px;
+    text-align:center;
     margin: auto;
-    margin: 10px;
+    margin: 20px;
+}
+
+.servicio h4{
+    margin-left: 20px;
 }
 
 .servicio img{
-width: 210px;
-    height: 210px;
+width: 300px;
+    height: 300px;
     margin: auto;
 }
 
 .servicio ul{
-margin-left: 50px
 }
 
 
@@ -428,7 +432,7 @@ margin-left: 50px
 
 .seccion4 h1{
     margin-top: 0px;
-    color:  #17AA8B;
+    color:  #1c6b34;
     margin-bottom: 30px
 }
 
@@ -464,25 +468,34 @@ box-shadow: 8px 7px 15px -4px rgba(117,115,117,1);
 
 .recomendacion p{
     min-width: 100px;
-    max-width: 300px;
+    max-width: 400px;
 }
 
 .sub-footer{
-     background: #17AA8B;
+     background: #a8df75;
      margin: none;
      display: flex;
      flex-wrap: wrap;
      justify-content: center;
      padding: 40px;
-     color: white;
+     color: #19532b;
+     font-weight: bold;
 }
 
 .sub-footer h4{
 margin-right: 30px;
+color: #19532b;
+font-weight: bold;
 }
 .sub-footer ul{
     list-style: none;
-    width: 250px
+    width: 250px;
+    padding-left: 0px !important;
+}
+
+.sub-footer div:nth-child(1){
+     width: 350px;
+     margin-left: 20px;
 }
 
 .sub-footer div{
@@ -497,7 +510,7 @@ margin-right: 30px;
     align-items: center;
 }
 .sub-footer a{
-    color: white;
+    color:#19532b;
 }
 
 .sub-footer i{
@@ -505,7 +518,7 @@ margin-right: 30px;
     margin-right: 20px
 }
 footer{
-   background:  #117c66;
+   background:  #1c6b34;
    color: #fff;
 padding: 10px;
 text-align: center;
@@ -517,7 +530,7 @@ bottom: 0px;
     height: 40px !important;
     padding: 5px;
     width: 100% !important;
-background-color: #17AA8B !important;
+background-color: #7ab740 !important;
  border:0px;
  font-weight: bold;
 }
@@ -528,7 +541,7 @@ background-color: #17AA8B !important;
 }
 
 .modal-dialog {
-    max-width: 420px !important;
+    max-width: 700px !important;
     margin: 30px auto;
 }
 
@@ -537,8 +550,9 @@ background-color: #17AA8B !important;
 }
 
 .modal-header h1{
-    font-size: 22px;
-    color: #17AA8B !important;
+    font-size: 24px;
+    color: #1c6b34 !important;
+    font-weight: bold;
 }
 
 .divisor{
@@ -581,7 +595,7 @@ background-color: #17AA8B !important;
 }
 
 .faq h1{
-    color:  #117c66;
+    color:  #1c6b34;
     text-align: center;
     margin-bottom: 30px;
 }
@@ -590,7 +604,7 @@ background-color: #17AA8B !important;
     margin-top: 0;
     margin-bottom: 0;
     font-size: 16px;
-    background-color:  #117c66;
+    background-color:  #7ab740 !important;
     color: white;
 }
 
