@@ -609,7 +609,7 @@ nutricionistas.S
       })
       */
       $.ajax({
-          url: 'https://api-sascha.herokuapp.com/estados_civil',
+          url: 'https://api-sascha.herokuapp.com/estadociviles',
           contentType: 'application/json',
           type: 'GET',
           success: function (res, status, xhr) {
@@ -628,7 +628,7 @@ nutricionistas.S
               let contservicio = document.getElementById('contenedor-servicio');
               res.data.map(function(servicio) {
                   vistaservicio = `<div class="servicio">
-                                      <img src="img/rebajar.jpeg">
+                                      <img src="${servicio.url_imagen}">
                                       <h3>${servicio.nombre}</h3>
                                       <p>${servicio.descripcion}</p>
                                       <h4>Incluye:</h4>
@@ -665,6 +665,7 @@ nutricionistas.S
       $('#usuario').val('');
       $('#email').val('');
       $('#password').val('');
+      $('#password_confirmation').val('');
       $('#cedula').val('');
       $('#first_name').val('');
       $('#last_name').val('');

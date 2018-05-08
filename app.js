@@ -24,7 +24,7 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500).json({ error: true, mensaje: err.message || 'Fallo del servidor' });
 });
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3030;
 const HOST = process.env.HOST || 'localhost';
 
 app.listen(PORT, function() {
