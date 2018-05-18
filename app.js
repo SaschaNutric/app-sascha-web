@@ -1,12 +1,16 @@
 var express = require('express'),
+	router = express.Router(),
 	path = require('path'),
 	logger = require('morgan'),
 	favicon = require('serve-favicon'),
 	cons = require('consolidate'),
 	app = express();
 
-app.set('secret', 'SECRET');
+var index = router.get('/', function(req, res, next) {
+  res.render('index', { title: 'Express' });
+});
 
+app.set('secret', 'SECRET');
 app.engine('html',cons.swig);
 app.set('views', path.join(__dirname, 'public/sascha-web'));
 app.set('view engine', 'html');
@@ -14,6 +18,8 @@ app.set('view engine', 'html');
 app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(express.static(path.join(__dirname, 'public/sascha-web')));
 app.use(logger('dev'));
+app.use('/sascha', index);
+app.use('/', index);
 
 app.use(function(req, res, next) {
   let err = new Error('No encontrado');
