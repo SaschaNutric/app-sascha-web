@@ -17,6 +17,7 @@ app.set('view engine', 'html');
 
 app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(express.static(path.join(__dirname, 'public/sascha-web')));
+app.use(express.static(path.join(__dirname, 'views')));
 app.use(logger('dev'));
 app.use('/sascha', index);
 app.use('/', index);
