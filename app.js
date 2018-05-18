@@ -1,14 +1,12 @@
-var express = require('express');
-var path = require('path');
-var logger = require('morgan');
-var app = express();
+var express = require('express'),
+	path = require('path'),
+	logger = require('morgan'),
+	favicon = require('serve-favicon'),
+	app = express();
 
 app.set('secret', 'SECRET');
-var cons = require('consolidate');
 
-app.engine('html',cons.swig);
-app.set('view engine', 'html');
-
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(express.static(path.join(__dirname, 'public/sascha-web')));
 app.use(logger('dev'));
 
