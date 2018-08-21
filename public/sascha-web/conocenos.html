@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Web Sascha</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="css/estilos.css">
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/sascha-js.js"></script>
+
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+	<div class="contenido">
+<!--Barra de Navegacion -->
+		<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     <a class="navbar-brand" href="#"><img src="img/logo-sascha-letras-verdes-100px.png" id="logoW"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="conocenos.html">Conócenos</a></li>
+        <li><a href="index.html#servicios">Servicios</a></li>
+         <li><a href="faq.html">FAQ</a></li>
+        <li class="suscribirse"><a data-toggle="modal" data-target="#modalSuscribirse">Suscribirse</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div class="seccion2">
+   <h1 style="font-size:80px">Nosotros</h1>
+    <img src="img/mujer.jpeg" class="banner">
+     <div class="texto-nosotros" >
+          <div >
+            <h2>Misión</h2>
+            <p id="negocio-mision">  </p>
+          </div>
+          <div >
+            <h2>Visión</h2>
+             <p id="negocio-vision"></p>
+          </div>
+     </div>
+</div>
+
+
+</div>
+<div class="sub-footer">
+
+ <div>
+  <h1>Software Sascha</h1>
+   Sascha, el cual es un sistema de
+información que apoya la gestión de actividades vinculadas a servicios de
+nutricionistas.
+
+ </div>
+  <div>
+    <h1>Menu</h1>
+    <ul>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="conocenos.html">Conócenos</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li class="suscribirse"><a href="#">Suscribirse</a></li>
+    </ul>
+  </div>
+
+    <div>
+    <h1>Contactos</h1>
+    <ul>
+      <li><a href="#" id="negocio-correo"></a></li>
+      <li>Telefono: <a href="" id="negocio-telefono"></a></li>
+    </ul>
+  </div>
+
+      <div>
+    <h1>Redes Sociales</h1>
+    <ul id="contenedor-redes-sociales">
+
+    </ul>
+  </div>
+</div>
+<footer>Todos los derechos reservados</footer>
+<!-- /.Modal Suscripcion -->
+<div class="modal fade" id="modalSuscribirse" tabindex="-1" role="dialog" aria-labelledby="modalSuscribirseLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+       <center> <img src="img/logo-sascha-letras-verdes-100px.png" class="modal-logo"></center>
+        <center><h1 class="modal-title" id="modalSuscribirseLabel">Suscribirse</h1></center>
+      </div>
+      <div class="modal-body">
+        <form class="row">
+          <div class="form-group col-sm-6">
+            <input type="text" name="first_name" id="first_name" class="form-control input-sm" placeholder="Nombre">
+          </div>          
+          <div class="form-group col-sm-6">
+            <input type="text" name="last_name" id="last_name" class="form-control input-sm" placeholder="Apellidos">
+          </div>
+          <div class="col-sm-12"></div>
+          <div class="form-group col-sm-6">
+            <input type="text" name="cedula" id="cedula" class="form-control input-sm" placeholder="Cédula">
+          </div>
+            <div class="form-group col-sm-6">
+                <div class='input-group' id='datetimepicker1'>
+                    <input id='fecha_nacimiento' type='date' class="form-control" placeholder="Fecha de Nacimiento" />
+                    <span class="input-group-addon">
+                        <i class="glyphicon glyphicon-calendar"></i>
+                    </span>
+                </div>
+              </div>
+<div class="col-sm-12"></div>
+          <div class="form-group col-sm-4">
+            <select class="form-control " id="estado_civil" name="estado_civil">
+              <option>Estado Civil</option>
+            </select>
+          </div>
+           <div class="form-group col-sm-3">
+            <select class="form-control " id="genero" name="genero" >
+              <option>Genero</option>
+            </select>
+          </div>
+          <div class="form-group col-sm-5">
+            <input type="text" name="telefono" id="telefono" class="form-control input-sm" placeholder="Telefono">
+          </div>
+<div class="col-sm-12"></div>
+          <div class="form-group col-sm-12">
+            <input type="text" name="direccion" id="direccion" class="form-control input-sm" placeholder="Direccion">
+          </div>
+
+          <div class="col-sm-11 divisor"> Datos de tu Cuenta</div>
+           <div class="form-group col-sm-6">
+            <input type="text" name="usuario" id="usuario" class="form-control input-sm" placeholder="Nombre de usuario">
+          </div>
+           <div class="form-group col-sm-6">
+            <input type="email" name="email" id="email" class="form-control input-sm" placeholder="Correo">
+          </div>
+          <div class="col-sm-12"></div>
+           <div class="form-group col-sm-6">
+            <input type="password" name="password" id="password" class="form-control input-sm" placeholder="Contraseña">
+          </div>
+
+          <div class="form-group col-sm-6">
+            <input type="password" name="password_confirmation" id="password_confirmation" class="form-control input-sm" placeholder="Confirmar Contraseña">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+       <center> <button type="button" class="btn btn-success" onClick="validar()" id="registrar">Suscribir</button> </center>
+       <script type="text/javascript">
+
+          
+         function validar(){
+          if($("#usuario").val()== "" || $("#email").val()== "" || $("#password").val()== "" || $("#password_confirmation").val()== ""){
+          if ($("#usuario").val()== ""){
+
+            $("#usuario").css('border',' 1px solid red');
+             $("input#usuario").parent().append('<span id="span-usuario">Ingrese usuario</span>');
+            $("#usuario").focus(function(){
+              $("input#usuario").css('border','1px solid #ccc');
+               $("span").remove("#span-usuario");
+            });
+
+          }
+
+            if ($("#password").val()== ""){
+            $("#password").css('border',' 1px solid red');
+              $("input#password").parent().append('<span id="span-contra">Ingrese contraseña</span>');
+            $("#password").focus(function(){
+               $("input#password").css('border','1px solid #ccc');
+               $("span").remove("#span-contra");
+            });
+
+          } 
+            if ($("#password_confirmation").val()== ""){
+            $("#password_confirmation").css('border',' 1px solid red');
+            $("input#password_confirmation").parent().append('<span id="confirmar">Ingrese confirmacion de contraseña</span>');
+            $("#password_confirmation").focus(function(){
+              $("input#password_confirmation").css('border','1px solid #ccc');
+               $("span").remove("#confirmar");
+            });
+
+          }
+
+          if ($("#email").val().indexOf('@', 0)== -1 || $("#email").val().indexOf('.', 0) == -1){
+                $("#email").css('border',' 1px solid red');
+                 $("input#email").parent().append('<span id="span-email">Ingrese Email Valido</span>');
+            $("#email").focus(function(){
+              $("input#email").css('border','1px solid #ccc');
+               $("span").remove("#span-email");
+            });
+          }
+
+          if ($("#cedula").val()== ""){
+                $("#cedula").css('border',' 1px solid red');
+                 $("input#cedula").parent().append('<span id="span-cedula">Ingrese cedula</span>');
+            $("#cedula").focus(function(){
+              $("input#cedula").css('border','1px solid #ccc');
+               $("span").remove("#span-cedula");
+            });
+          }
+
+           if ($("#first_name").val()== ""){
+                $("input#first_name").css('border',' 1px solid red');
+                 $("input#first_name").parent().append('<span id="span-nombre">Ingrese Nombres</span>');
+            $("input#first_name").focus(function(){
+             $("input#first_name").css('border',' 1px solid #ccc');
+               $("span").remove("#span-nombre");
+            });
+          }
+
+           if ($("#telefono").val()== ""){
+                $("input#telefono").css('border',' 1px solid red');
+                 $("input#telefono").parent().append('<span id="span-telefono">Ingrese Nombres</span>');
+            $("#telefono").focus(function(){
+              $("input#telefono").css('border','1px solid #ccc');
+               $("span").remove("#span-telefono");
+            });
+          }
+
+           if ($("#last_name").val()== ""){
+                $("#last_name").css('border',' 1px solid red');
+                 $("input#last_name").parent().append('<span id="span-last" >Ingrese Apellidos</span>');
+            $("#last_name").focus(function(){
+               $("input#last_name").css('border','1px solid #ccc');
+               $("span").remove("#span-last");
+            });
+          }
+
+            if ($("#fecha_nacimiento").val()== ""){
+                $("#fecha_nacimiento").css('border',' 1px solid red');
+                 $("input#fecha_nacimiento").parent().parent().append('<span id="span-nacimiento">Ingrese Apellidos</span>');
+            $("#fecha_nacimiento").focus(function(){
+              $("input#fecha_nacimiento").css('border','1px solid #ccc');
+               $("span").remove("#span-nacimiento");
+            });
+          }
+
+          if ($("#direccion").val()== ""){
+                $("#direccion").css('border',' 1px solid red');
+                 $("input#direccion").parent().append('<span id="span-direccion">Ingrese Apellidos</span>');
+            $("#direccion").focus(function(){
+               $("input#direccion").css('border','1px solid #ccc');
+               $("span").remove("#span-direccion");
+            });
+          }
+
+          return false;
+         }
+         suscribir();
+         }
+
+         f
+
+       </script>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html> 
